@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kor" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MAIN</title>
+</head>
+<body>
+    <h1>MAIN PAGE</h1>
+
+    <h1 th:text="${#authentication.name}">이름 : </h1><br>
+    <!--principal 은 spring security에서 관리하는 객체로 UserSession(UserDetails 를 impl 받은) 에 대한 정보가 들어가게 됨.-->
+    <!--[Principal=UserSession
+    (userId=1, email=master@asd.com,
+    password=$2a$10$efIzz/aeX8d709Tmtcp8b.nLVLi/vguv7b0Zd0.XYS/OPwRTl/pa2,
+    status=REGISTERED, role=MASTER, registeredAt=2023-07-13T03:23:57,
+    unregisteredAt=null, lastLoginAt=null, storeId=1, storeName=스타벅스),
+    Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=9534630D19010C62B6DFF0CCA81EF869]-->
+    <h1 th:text="${#authentication.principal.storeName}">이름 : </h1><br>
+    <h1 th:text="${#authentication.principal.status}">이름 : </h1><br>
+    <h1 th:text="${#authentication.principal.role}">이름 : </h1><br>
+
+    <h1 th:text="${#authentication}">인증정보</h1><br>
+</body>
+</html>
