@@ -2,10 +2,10 @@ package org.delivery.api.interceptor;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.delivery.api.common.error.ErrorCode;
-import org.delivery.api.common.error.TokenErrorCode;
-import org.delivery.api.common.exception.ApiException;
+import org.delivery.commom.exception.ApiException;
 import org.delivery.api.domain.token.business.TokenBusiness;
+import org.delivery.commom.error.ErrorCode;
+import org.delivery.commom.error.TokenErrorCode;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestAttributes;

@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.delivery.api.domain.store.controller.model.StoreResponse;
 import org.delivery.api.domain.storemenu.controller.model.StoreMenuResponse;
-import org.delivery.db.userorder.enums.UserOrderStatus;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
 package org.delivery.api.domain.user.service;
 
 import lombok.RequiredArgsConstructor;
-import org.delivery.api.common.error.ErrorCode;
-import org.delivery.api.common.error.UserErrorCode;
-import org.delivery.api.common.exception.ApiException;
+import org.delivery.commom.exception.ApiException;
+import org.delivery.commom.error.ErrorCode;
+import org.delivery.commom.error.UserErrorCode;
 import org.delivery.db.user.UserEntity;
 import org.delivery.db.user.UserRepository;
 import org.delivery.db.user.enums.UserStatus;

@@ -1,8 +1,7 @@
 package org.delivery.api.domain.storemenu.business;
 
 import lombok.RequiredArgsConstructor;
-import org.delivery.api.common.annotation.Business;
-import org.delivery.api.common.api.Api;
+import org.delivery.commom.annotation.Business;
 import org.delivery.api.domain.storemenu.controller.model.StoreMenuRegisterRequest;
 import org.delivery.api.domain.storemenu.controller.model.StoreMenuResponse;
 import org.delivery.api.domain.storemenu.converter.StoreMenuConverter;

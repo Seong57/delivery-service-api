@@ -1,8 +1,7 @@
 package org.delivery.api.resolver;
 
 import lombok.RequiredArgsConstructor;
-import org.delivery.api.common.annotation.UserSession;
-import org.delivery.api.domain.user.business.UserBusiness;
+import org.delivery.commom.annotation.UserSession;
 import org.delivery.api.domain.user.model.User;
 import org.delivery.api.domain.user.service.UserService;
 import org.springframework.core.MethodParameter;

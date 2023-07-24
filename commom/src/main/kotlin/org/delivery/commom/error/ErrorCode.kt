@@ -1,7 +1,5 @@
 package org.delivery.commom.error
 
-import lombok.Getter
-
 enum class ErrorCode(
     private val httpStatusCode: Int,
     private val errorCode: Int,

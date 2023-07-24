@@ -2,8 +2,8 @@ package org.delivery.api.domain.userorder.controller;
 
 import io.swagger.v3.oas.annotations.Parameter;
 import lombok.RequiredArgsConstructor;
-import org.delivery.api.common.annotation.UserSession;
-import org.delivery.api.common.api.Api;
+import org.delivery.commom.annotation.UserSession;
+import org.delivery.commom.api.Api;
 import org.delivery.api.domain.user.model.User;
 import org.delivery.api.domain.userorder.business.UserOrderBusiness;
 import org.delivery.api.domain.userorder.controller.model.UserOrderDetailResponse;

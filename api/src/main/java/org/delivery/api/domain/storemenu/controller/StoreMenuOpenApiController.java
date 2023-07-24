@@ -1,11 +1,10 @@
 package org.delivery.api.domain.storemenu.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.delivery.api.common.api.Api;
+import org.delivery.commom.api.Api;
 import org.delivery.api.domain.storemenu.business.StoreMenuBusiness;
 import org.delivery.api.domain.storemenu.controller.model.StoreMenuRegisterRequest;
 import org.delivery.api.domain.storemenu.controller.model.StoreMenuResponse;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

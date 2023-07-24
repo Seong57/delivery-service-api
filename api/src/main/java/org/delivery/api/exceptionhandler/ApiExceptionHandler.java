@@ -1,9 +1,8 @@
 package org.delivery.api.exceptionhandler;
 
 import lombok.extern.slf4j.Slf4j;
-import org.delivery.api.common.api.Api;
-import org.delivery.api.common.exception.ApiException;
-import org.delivery.api.common.exception.ApiExceptionIfs;
+import org.delivery.commom.api.Api;
+import org.delivery.commom.exception.ApiException;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -25,7 +24,7 @@ public class ApiExceptionHandler {
         return ResponseEntity
                 .status(errorCode.getHttpStatusCode())
                 .body(
-                        Api.ERROR(errorCode, apiException.getErrorDescription())
+                        Api.Companion.ERROR(errorCode, apiException.getErrorDescription())
                 );
     }
 }
