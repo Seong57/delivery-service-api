@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus;
 /*
 * User 의 경우 1000번대 에러코드 사용
 * */
-@AllArgsConstructor
+/*@AllArgsConstructor
 @Getter
 public enum UserErrorCode implements ErrorCodeIfs{
 
@@ -19,4 +19,4 @@ public enum UserErrorCode implements ErrorCodeIfs{
 
     private final String description;
 
-}
+}*/

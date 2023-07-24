@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
+/*
 @AllArgsConstructor
 @Getter
 public enum ErrorCode implements ErrorCodeIfs{
@@ -19,24 +20,11 @@ public enum ErrorCode implements ErrorCodeIfs{
     private final Integer errorCode;
 
     private final String description;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
+    */
+/*
     * @Getter 어노테이션을 달아줌으로써
     * Interface 의 get 메소드를 오버라이드가 자동으로 되도록 함.
-     */
+     *//*
+
 }
+*/

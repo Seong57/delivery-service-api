@@ -1,6 +1,6 @@
 package org.delivery.api.common.error;
 
-public interface ErrorCodeIfs {
+/*public interface ErrorCodeIfs {
 
     Integer getHttpStatusCode();
 
@@ -8,4 +8,4 @@ public interface ErrorCodeIfs {
 
     String getDescription();
 
-}
+}*/
