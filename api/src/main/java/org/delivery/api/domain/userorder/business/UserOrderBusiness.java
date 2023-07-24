@@ -41,6 +41,7 @@ public class UserOrderBusiness {
     // 3. userOrderMenu 생성
     // 4. 응답 생성
     public UserOrderResponse userOrder(User user, UserOrderRequest body) {
+
         List<StoreMenuEntity> storeMenuEntityList = body.getStoreMenuIdList()
                 .stream()
                 .map(it -> storeMenuService.getStoreMenuWithThrow(it))

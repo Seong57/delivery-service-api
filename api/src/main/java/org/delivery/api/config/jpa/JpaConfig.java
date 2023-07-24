@@ -13,10 +13,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 *
 */
 
-@Configuration
+/*@Configuration
 @EntityScan(basePackages = "org.delivery.db")   // 주소 하위의 @Entity 가 붙은 클래스를 스캔
 @EnableJpaRepositories(basePackages = "org.delivery.db")    //주소 하위의 Repository 도 사용한단 어노테이션
 public class JpaConfig {
 
 
-}
+}*/

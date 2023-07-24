@@ -27,5 +27,5 @@ public class UserOrderMenuEntity extends BaseEntity {
 
     @Column(precision = 11, scale = 4, length = 45, nullable = false)
     @Enumerated(EnumType.STRING)
-    protected UserOrderMenuStatus status;        //누락, 취소 등을 위함
+    private UserOrderMenuStatus status;        //누락, 취소 등을 위함
 }

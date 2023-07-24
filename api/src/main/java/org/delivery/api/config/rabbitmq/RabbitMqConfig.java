@@ -11,6 +11,7 @@ import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+/*
 
 @Configuration
 public class RabbitMqConfig {
@@ -25,10 +26,12 @@ public class RabbitMqConfig {
         return new Queue("delivery.queue");
     }
 
-    /*
+    */
+/*
     * 스프링에서 매개변수에 특별한 어노테이션이 붙지 않았어도 객체라면 제일 먼저 빈 스코프로 인해
     * 위에서 만들어진 queue 와 exchange 가 매개변수로 넘어가게 된다.
-    */
+    *//*
+
     @Bean
     public Binding binding(DirectExchange directExchange, Queue queue){
         return BindingBuilder.bind(queue).to(directExchange).with("delivery.key");
@@ -53,7 +56,9 @@ public class RabbitMqConfig {
         return rabbitTemplate;
     }
 
-    /*ObjectMapper 를 Bean 으로 설정해두었기 때문에 설정해둔 빈이 매개변수로 들어오게 됨.*/
+    */
+/*ObjectMapper 를 Bean 으로 설정해두었기 때문에 설정해둔 빈이 매개변수로 들어오게 됨.*//*
+
     @Bean
     public MessageConverter messageConverter(ObjectMapper objectMapper){
         return new Jackson2JsonMessageConverter(objectMapper);
@@ -61,3 +66,4 @@ public class RabbitMqConfig {
 
 
 }
+*/

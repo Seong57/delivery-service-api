@@ -9,15 +9,13 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.List;
+/*
 
 @RequiredArgsConstructor
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-
-
     private final AuthorizationInterceptor authorizationInterceptor;
     private final UserSessionResolver userSessionResolver;
-
     private List<String> OPEN_API = List.of(
             "/open-api/**"
     );
@@ -48,3 +46,4 @@ public class WebConfig implements WebMvcConfigurer {
         resolvers.add(userSessionResolver);
     }
 }
+*/

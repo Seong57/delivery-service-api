@@ -8,6 +8,7 @@ import org.delivery.db.userorder.enums.UserOrderStatus;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -36,5 +37,6 @@ public class UserOrderEntity extends BaseEntity {
 
     private LocalDateTime deliveryStartedAt;
 
-    protected LocalDateTime receivedAt;
+    private LocalDateTime receivedAt;
+
 }
