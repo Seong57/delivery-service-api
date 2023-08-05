@@ -13,7 +13,7 @@ public class ObjectMapperConfig {
 
         objectMapper.registerModule(new JavaTimeModule());  // local date
 
-        //모르는 JSON field 에 대해서는 무시한다.
+        //모르는 JSON field 에대해서는 무시한다.
         //ex) AccountDto 의 필드를 제외하고 다른 데이터를 보냈다면 에러를 터트릴거냐에 대한 설정
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 

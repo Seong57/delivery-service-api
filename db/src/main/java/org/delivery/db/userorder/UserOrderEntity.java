@@ -1,9 +1,13 @@
+/*
 package org.delivery.db.userorder;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.delivery.db.BaseEntity;
+import org.delivery.db.store.StoreEntity;
 import org.delivery.db.userorder.enums.UserOrderStatus;
+import org.delivery.db.userordermenu.UserOrderMenuEntity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -22,6 +26,10 @@ public class UserOrderEntity extends BaseEntity {
     @Column(nullable = false)
     private Long userId;    //user Table 과 1:n
 
+    @JoinColumn(nullable = false, name = "store_id")
+    @ManyToOne
+    private StoreEntity store;
+
     @Column(length = 50, nullable = false)
     @Enumerated(EnumType.STRING)
     private UserOrderStatus status;
@@ -39,4 +47,10 @@ public class UserOrderEntity extends BaseEntity {
 
     private LocalDateTime receivedAt;
 
+    @OneToMany(mappedBy = "userOrder")
+    @ToString.Exclude
+    @JsonIgnore
+    private List<UserOrderMenuEntity> userOrderMenuList;
+
 }
+*/

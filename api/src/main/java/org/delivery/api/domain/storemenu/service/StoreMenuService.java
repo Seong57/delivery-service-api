@@ -20,7 +20,7 @@ public class StoreMenuService {
     public StoreMenuEntity getStoreMenuWithThrow(
             Long id
     ){
-        Optional<StoreMenuEntity> entity = storeMenuRepository.findFirstByIdAndStatusOrderByIdDesc(id, StoreMenuStatus.REGISTERED);
+        Optional<StoreMenuEntity> entity = Optional.ofNullable(storeMenuRepository.findFirstByIdAndStatusOrderByIdDesc(id, StoreMenuStatus.REGISTERED));
         return entity.orElseThrow(() -> new ApiException(ErrorCode.NULL_POINT));
     }
 

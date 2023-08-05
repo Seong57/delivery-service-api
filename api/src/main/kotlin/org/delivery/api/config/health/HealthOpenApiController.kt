@@ -13,7 +13,9 @@ class HealthOpenApiController {
     private val logger: Logger = LoggerFactory.getLogger(this.javaClass)
 
     @GetMapping("/health")
-    fun health(){
+    fun health(): String{
         logger.info("health call")
+
+        return "health call"
     }
 }

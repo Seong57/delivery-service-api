@@ -1,3 +1,4 @@
+/*
 package org.delivery.api.domain.userorder.controller.model;
 
 import lombok.AllArgsConstructor;
@@ -25,3 +26,4 @@ public class UserOrderDetailResponse {
     private List<StoreMenuResponse> storeMenuResponseList;
 
 }
+*/
